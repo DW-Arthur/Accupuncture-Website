@@ -1,7 +1,7 @@
 import { defaultMaxListeners } from 'events';
 import React, {Component} from 'react';
-import { Router, Switch, Route } from 'react-router-dom';
-
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import history from './history';
 import Home from './components/Home/Home'
 
 export default class Routes extends Component{
@@ -9,9 +9,11 @@ export default class Routes extends Component{
         return(
             //
             
-            <Switch>
-                <Route path ="/Home" exact component={Home}/>
-            </Switch>
+            <BrowserRouter>
+                <Route path ="/" exact component={Home}/>
+            </BrowserRouter>
+            
+
             
 
         )
