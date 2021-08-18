@@ -1,0 +1,12 @@
+MenuItems.map((item. index)=>){
+                       
+                       return(
+                            <li>
+                                <a className={item.cName} href={item.url}}>Home
+                                </a></li>
+                        )
+                    }}
+                    <li><a className={item.cName}>Home</a></li>
+                    <li><a href="#news">Appointment</a></li> 
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
